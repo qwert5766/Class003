@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbMessage: UILabel!
+    
+    
+    @IBAction func btnPushCliked(_ sender: UIButton) {
+        lbMessage.text = "Hi, Xcode"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
