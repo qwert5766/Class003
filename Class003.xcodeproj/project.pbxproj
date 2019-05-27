@@ -11,6 +11,8 @@
 		ACE30CF1D7E7915410C62F32 /* Pods_Class003Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BECC5C2BFE06F22605749F3 /* Pods_Class003Tests.framework */; };
 		D9D4A6F182DA07D70492F6CE /* Pods_Class003.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8CF0782713340305A48D65 /* Pods_Class003.framework */; };
 		F486644A22891F9D0010E7D7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486644922891F9D0010E7D7 /* WebKit.framework */; };
+		F48955A5229B8766008B48D8 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48955A4229B8766008B48D8 /* FileWorker.swift */; };
+		F48955A9229B9423008B48D8 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */; };
 		F48F225C22924B5800984A49 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */; };
 		FF443FB8226D5EEE0097F31F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF443FB7226D5EEE0097F31F /* AppDelegate.swift */; };
 		FF443FBA226D5EEE0097F31F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF443FB9226D5EEE0097F31F /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		A6BEF4F75E52CA8BF67618DF /* Pods-Class003.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class003.debug.xcconfig"; path = "Target Support Files/Pods-Class003/Pods-Class003.debug.xcconfig"; sourceTree = "<group>"; };
 		C358D73C17F76BE637856D9C /* Pods-Class003Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class003Tests.release.xcconfig"; path = "Target Support Files/Pods-Class003Tests/Pods-Class003Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F486644922891F9D0010E7D7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F48955A4229B8766008B48D8 /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
+		F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
 		F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
 		FF443FB4226D5EEE0097F31F /* Class003.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Class003.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF443FB7226D5EEE0097F31F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				FF443FC3226D5EFC0097F31F /* Info.plist */,
 				FF9BC0E1227FDEDD00DCFD21 /* MyBrowserViewController.swift */,
 				F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */,
+				F48955A4229B8766008B48D8 /* FileWorker.swift */,
+				F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -315,12 +321,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Class003/Pods-Class003-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,8 +410,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48F225C22924B5800984A49 /* AsyncRequestWorker.swift in Sources */,
+				F48955A9229B9423008B48D8 /* ServiceCategoryContext.swift in Sources */,
 				FF443FBA226D5EEE0097F31F /* ViewController.swift in Sources */,
 				FF9BC0E2227FDEDD00DCFD21 /* MyBrowserViewController.swift in Sources */,
+				F48955A5229B8766008B48D8 /* FileWorker.swift in Sources */,
 				FF443FB8226D5EEE0097F31F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

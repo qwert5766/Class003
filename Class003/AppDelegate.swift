@@ -21,6 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //netWorker = AsyncRequestWorker()
         
+        //UserDefaults.standard.set("ya!", forKey: "hi")
+        //UserDefaults.standard.synchronize()
+        
+        
+        //print( "\( UserDefaults.standard.string(forKey: "hi")! )"  )
+        
+        
+        print("\( NSHomeDirectory() )")
         return true
     }
 

@@ -13,9 +13,9 @@ class MyBrowserViewController: UIViewController, UITextFieldDelegate,AsyncRepons
     
     
     func receviedReponse(_ sender: AsyncRequestWorker, responseString: String, tag: Int) {
-        print(responseString)
+        //print(responseString)
         
-        myWebView.loadHTMLString(responseString, baseURL: URL(string: "https://www.google.com")!)
+        //myWebView.loadHTMLString(responseString, baseURL: URL(string: "https://www.google.com")!)
     }
     
 
@@ -41,12 +41,18 @@ class MyBrowserViewController: UIViewController, UITextFieldDelegate,AsyncRepons
         super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisAppear(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(dataReceived(notification:)), name: NSNotification.Name(rawValue: "response.received"), object: nil)
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "response.received"), object: nil)
         
     }
     
@@ -102,6 +108,22 @@ class MyBrowserViewController: UIViewController, UITextFieldDelegate,AsyncRepons
     }
     
     
+    
+    //MARK: - notification center
+    
+    @objc func dataReceived(notification : NSNotification?){
+        
+        
+        guard let responseString = notification?.userInfo?["aaa"] as? String else{
+            return
+            
+        }
+        print(responseString)
+        
+        myWebView.loadHTMLString(responseString, baseURL: URL(string: "https://www.google.com.tw")!)
+        
+        
+    }
     
     
     
