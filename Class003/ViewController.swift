@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         
         
         let cancelAction = UIAlertAction(title: "NO" , style: .default, handler: { action in
-            self.performSegue(withIdentifier: "moveToM2KSegue", sender: self)
+            
         })
          alert.addAction(cancelAction)
         
