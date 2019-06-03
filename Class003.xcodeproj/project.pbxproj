@@ -14,6 +14,10 @@
 		F48955A5229B8766008B48D8 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48955A4229B8766008B48D8 /* FileWorker.swift */; };
 		F48955A9229B9423008B48D8 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */; };
 		F48F225C22924B5800984A49 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */; };
+		F490C55E22A4ACE700CB99EB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C55D22A4ACE700CB99EB /* Store.swift */; };
+		F490C56022A4AD2400CB99EB /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */; };
+		F490C56422A4BA1E00CB99EB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C56322A4BA1E00CB99EB /* ImageViewController.swift */; };
+		F490C56622A4C4BA00CB99EB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C56522A4C4BA00CB99EB /* MapViewController.swift */; };
 		FF443FB8226D5EEE0097F31F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF443FB7226D5EEE0097F31F /* AppDelegate.swift */; };
 		FF443FBA226D5EEE0097F31F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF443FB9226D5EEE0097F31F /* ViewController.swift */; };
 		FF443FBD226D5EEE0097F31F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF443FBB226D5EEE0097F31F /* Main.storyboard */; };
@@ -55,6 +59,10 @@
 		F48955A4229B8766008B48D8 /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
 		F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
+		F490C55D22A4ACE700CB99EB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
+		F490C56322A4BA1E00CB99EB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		F490C56522A4C4BA00CB99EB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FF443FB4226D5EEE0097F31F /* Class003.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Class003.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF443FB7226D5EEE0097F31F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF443FB9226D5EEE0097F31F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +167,10 @@
 				F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */,
 				F48955A4229B8766008B48D8 /* FileWorker.swift */,
 				F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */,
+				F490C55D22A4ACE700CB99EB /* Store.swift */,
+				F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */,
+				F490C56322A4BA1E00CB99EB /* ImageViewController.swift */,
+				F490C56522A4C4BA00CB99EB /* MapViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -409,12 +421,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F490C55E22A4ACE700CB99EB /* Store.swift in Sources */,
+				F490C56422A4BA1E00CB99EB /* ImageViewController.swift in Sources */,
 				F48F225C22924B5800984A49 /* AsyncRequestWorker.swift in Sources */,
+				F490C56622A4C4BA00CB99EB /* MapViewController.swift in Sources */,
 				F48955A9229B9423008B48D8 /* ServiceCategoryContext.swift in Sources */,
 				FF443FBA226D5EEE0097F31F /* ViewController.swift in Sources */,
 				FF9BC0E2227FDEDD00DCFD21 /* MyBrowserViewController.swift in Sources */,
 				F48955A5229B8766008B48D8 /* FileWorker.swift in Sources */,
 				FF443FB8226D5EEE0097F31F /* AppDelegate.swift in Sources */,
+				F490C56022A4AD2400CB99EB /* ServiceCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

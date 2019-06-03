@@ -52,7 +52,15 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cuU-D9-JfV" kind="show" id="xRI-be-owQ"/>
+                                    <action selector="btnMoveToImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ub-Px-qub"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhn-7n-P3E">
+                                <rect key="frame" x="33" y="559" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="btnMapClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kti-XY-Qdf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,11 +70,37 @@
                     <navigationItem key="navigationItem" id="vET-eF-EeQ"/>
                     <connections>
                         <outlet property="lbMessage" destination="iPu-mg-i0s" id="6gK-zX-c7n"/>
+                        <segue destination="cuU-D9-JfV" kind="show" identifier="moveToM2KSegue" id="D08-Ue-Vu1"/>
+                        <segue destination="0rU-xU-wZC" kind="show" identifier="moveToMapSegue" id="CPI-v2-PUE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="478.79464285714283"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Fsh-ed-Trl">
+            <objects>
+                <viewController id="0rU-xU-wZC" customClass="MapViewController" customModule="Class003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bvr-ni-SbI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gc8-oI-Irh">
+                                <rect key="frame" x="20" y="106" width="374" height="734"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="my0-7t-JXL"/>
+                    </view>
+                    <connections>
+                        <outlet property="myMapView" destination="gc8-oI-Irh" id="4IG-h9-Awg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOs-BJ-IY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682.608695652174" y="1662.7232142857142"/>
         </scene>
         <!--My Browser View Controller-->
         <scene sceneID="2Uh-RP-fTD">
@@ -125,16 +159,28 @@
             </objects>
             <point key="canvasLocation" x="1733.3333333333335" y="99.107142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="naA-bI-MJx">
             <objects>
-                <viewController id="cuU-D9-JfV" sceneMemberID="viewController">
+                <viewController id="cuU-D9-JfV" customClass="ImageViewController" customModule="Class003" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgU-go-Dot">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="sNi-fL-Ki2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.27148466888265904" green="0.60945595854922274" blue="0.2495539240476955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="sNi-fL-Ki2" firstAttribute="bottom" secondItem="h2O-f0-LuW" secondAttribute="bottom" id="7e6-MZ-8Mw"/>
+                            <constraint firstItem="sNi-fL-Ki2" firstAttribute="leading" secondItem="h2O-f0-LuW" secondAttribute="leading" id="Fce-xh-xFc"/>
+                            <constraint firstItem="sNi-fL-Ki2" firstAttribute="top" secondItem="h2O-f0-LuW" secondAttribute="top" id="Pvc-Tk-Omx"/>
+                            <constraint firstItem="sNi-fL-Ki2" firstAttribute="trailing" secondItem="h2O-f0-LuW" secondAttribute="trailing" id="VIs-TP-wkO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h2O-f0-LuW"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVE-76-ov1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,4 +205,7 @@
             <point key="canvasLocation" x="-162.31884057971016" y="478.79464285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="266.66665649414062" height="178.66667175292969"/>
+    </resources>
 </document>

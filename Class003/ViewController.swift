@@ -8,14 +8,51 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
+    
+    
+    
+    
+    
     @IBOutlet weak var lbMessage: UILabel!
     
     
     @IBAction func btnPushCliked(_ sender: UIButton) {
         lbMessage.text = "Hi, Xcode"
     }
+    
+    @IBAction func btnMapClicked(_ sender: Any) {
+        
+        performSegue(withIdentifier: "moveToMapSegue", sender: self)
+    }
+    //UIButton
+    @IBAction func btnMoveToImageClicked(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "資訊", message: "ＹＮ", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "YES" , style: .default, handler: { action in
+            
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "moveToM2KSegue", sender: self)
+            }
+            
+        })
+        
+        
+        alert.addAction(okAction)
+        
+        
+        let cancelAction = UIAlertAction(title: "NO" , style: .default, handler: { action in
+            self.performSegue(withIdentifier: "moveToM2KSegue", sender: self)
+        })
+         alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion:nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,5 +71,15 @@ class ViewController: UIViewController {
     }
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if( segue.identifier == "moveToM2KSegue"){
+            
+            let vc = segue.destination as! ImageViewController
+            
+            vc.index = 5
+            
+        }
+    }
 }
 
