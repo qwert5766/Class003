@@ -13,6 +13,9 @@
 		F486644A22891F9D0010E7D7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486644922891F9D0010E7D7 /* WebKit.framework */; };
 		F48955A5229B8766008B48D8 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48955A4229B8766008B48D8 /* FileWorker.swift */; };
 		F48955A9229B9423008B48D8 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */; };
+		F48C986E22B7243E0065837E /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48C986D22B7243E0065837E /* ProductListViewController.swift */; };
+		F48C987022B7372B0065837E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48C986F22B7372B0065837E /* MyTableViewCell.swift */; };
+		F48C987222B742880065837E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48C987122B742880065837E /* DetailViewController.swift */; };
 		F48F225C22924B5800984A49 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */; };
 		F490C55E22A4ACE700CB99EB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C55D22A4ACE700CB99EB /* Store.swift */; };
 		F490C56022A4AD2400CB99EB /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */; };
@@ -58,6 +61,9 @@
 		F486644922891F9D0010E7D7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F48955A4229B8766008B48D8 /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F48955A8229B9423008B48D8 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
+		F48C986D22B7243E0065837E /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		F48C986F22B7372B0065837E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F48C987122B742880065837E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
 		F490C55D22A4ACE700CB99EB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
@@ -171,6 +177,9 @@
 				F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */,
 				F490C56322A4BA1E00CB99EB /* ImageViewController.swift */,
 				F490C56522A4C4BA00CB99EB /* MapViewController.swift */,
+				F48C986D22B7243E0065837E /* ProductListViewController.swift */,
+				F48C986F22B7372B0065837E /* MyTableViewCell.swift */,
+				F48C987122B742880065837E /* DetailViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -421,15 +430,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48C987222B742880065837E /* DetailViewController.swift in Sources */,
 				F490C55E22A4ACE700CB99EB /* Store.swift in Sources */,
 				F490C56422A4BA1E00CB99EB /* ImageViewController.swift in Sources */,
 				F48F225C22924B5800984A49 /* AsyncRequestWorker.swift in Sources */,
 				F490C56622A4C4BA00CB99EB /* MapViewController.swift in Sources */,
 				F48955A9229B9423008B48D8 /* ServiceCategoryContext.swift in Sources */,
+				F48C987022B7372B0065837E /* MyTableViewCell.swift in Sources */,
 				FF443FBA226D5EEE0097F31F /* ViewController.swift in Sources */,
 				FF9BC0E2227FDEDD00DCFD21 /* MyBrowserViewController.swift in Sources */,
 				F48955A5229B8766008B48D8 /* FileWorker.swift in Sources */,
 				FF443FB8226D5EEE0097F31F /* AppDelegate.swift in Sources */,
+				F48C986E22B7243E0065837E /* ProductListViewController.swift in Sources */,
 				F490C56022A4AD2400CB99EB /* ServiceCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

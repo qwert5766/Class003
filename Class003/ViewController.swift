@@ -26,8 +26,14 @@ class ViewController: UIViewController {
     
     @IBAction func btnMapClicked(_ sender: Any) {
         
-        performSegue(withIdentifier: "moveToMapSegue", sender: self)
+        self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
     }
+    
+    
+    @IBAction func btnTableClicked(_ sender: UIButton) {
+         self.performSegue(withIdentifier: "moveToTableViewSegue", sender: self)
+    }
+    
     //UIButton
     @IBAction func btnMoveToImageClicked(_ sender: Any) {
         
