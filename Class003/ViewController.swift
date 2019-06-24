@@ -35,6 +35,10 @@ class ViewController: UIViewController {
     }
     
     //UIButton
+    @IBAction func btnWebClicked(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "moveToWebSegue", sender: self)
+        
+    }
     @IBAction func btnMoveToImageClicked(_ sender: Any) {
         
         let alert = UIAlertController(title: "資訊", message: "ＹＮ", preferredStyle: .alert)

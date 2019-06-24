@@ -64,11 +64,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-a1-8ks">
-                                <rect key="frame" x="0.0" y="675" width="414" height="94"/>
+                                <rect key="frame" x="0.0" y="618" width="414" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Table"/>
                                 <connections>
                                     <action selector="btnTableClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWS-k4-ix3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3L-04-cZc">
+                                <rect key="frame" x="0.0" y="733" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WebViewButton"/>
+                                <connections>
+                                    <action selector="btnWebClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7X1-NO-DYt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,6 +89,7 @@
                         <segue destination="cuU-D9-JfV" kind="show" identifier="moveToM2KSegue" id="D08-Ue-Vu1"/>
                         <segue destination="0rU-xU-wZC" kind="show" identifier="moveToMapSegue" id="CPI-v2-PUE"/>
                         <segue destination="thk-Tp-alO" kind="show" identifier="moveToTableViewSegue" id="gOG-Ay-Slo"/>
+                        <segue destination="b5l-4P-Htq" kind="show" identifier="moveToWebSegue" id="uSt-vl-8va"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -199,6 +208,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m84-Js-HdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="971.01449275362324" y="1419.6428571428571"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Gza-Es-6HA">
+            <objects>
+                <viewController id="b5l-4P-Htq" customClass="WebViewController" customModule="Class003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vju-jU-3OR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qkV-WC-HYa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afT-rc-VP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="1446"/>
         </scene>
         <!--My Browser View Controller-->
         <scene sceneID="2Uh-RP-fTD">

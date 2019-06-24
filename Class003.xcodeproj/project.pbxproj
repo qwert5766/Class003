@@ -17,6 +17,7 @@
 		F48C987022B7372B0065837E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48C986F22B7372B0065837E /* MyTableViewCell.swift */; };
 		F48C987222B742880065837E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48C987122B742880065837E /* DetailViewController.swift */; };
 		F48F225C22924B5800984A49 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */; };
+		F48F982A22C06B5600AB5F6F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F982922C06B5600AB5F6F /* WebViewController.swift */; };
 		F490C55E22A4ACE700CB99EB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C55D22A4ACE700CB99EB /* Store.swift */; };
 		F490C56022A4AD2400CB99EB /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */; };
 		F490C56422A4BA1E00CB99EB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490C56322A4BA1E00CB99EB /* ImageViewController.swift */; };
@@ -65,6 +66,7 @@
 		F48C986F22B7372B0065837E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		F48C987122B742880065837E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F48F225B22924B5800984A49 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
+		F48F982922C06B5600AB5F6F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F490C55D22A4ACE700CB99EB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F490C55F22A4AD2400CB99EB /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		F490C56322A4BA1E00CB99EB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				F48C986D22B7243E0065837E /* ProductListViewController.swift */,
 				F48C986F22B7372B0065837E /* MyTableViewCell.swift */,
 				F48C987122B742880065837E /* DetailViewController.swift */,
+				F48F982922C06B5600AB5F6F /* WebViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				FF9BC0E2227FDEDD00DCFD21 /* MyBrowserViewController.swift in Sources */,
 				F48955A5229B8766008B48D8 /* FileWorker.swift in Sources */,
 				FF443FB8226D5EEE0097F31F /* AppDelegate.swift in Sources */,
+				F48F982A22C06B5600AB5F6F /* WebViewController.swift in Sources */,
 				F48C986E22B7243E0065837E /* ProductListViewController.swift in Sources */,
 				F490C56022A4AD2400CB99EB /* ServiceCategory.swift in Sources */,
 			);
